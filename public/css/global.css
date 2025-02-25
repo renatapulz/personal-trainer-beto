@@ -31,7 +31,7 @@ header {
 }
 
 .logo img {
-    max-height: 60px;
+    max-height: 85px;
 }
 
 .mobile-menu-icon {
@@ -101,7 +101,7 @@ header {
     display: block;
     color: #ffffff;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 31px;
     padding: 15px 0;
 }
 
@@ -166,8 +166,17 @@ header {
 }
 
 @media screen and (min-width: 730px) {
+    header {
+        display: flex;
+        justify-content: space-around;
+    }
+
     .menu-list {
         display: flex !important;
+    }
+
+    .header-menu a {
+        font-size: 21px;
     }
 
     .mobile-menu-icon {
@@ -175,7 +184,12 @@ header {
     }
 
     .logo {
+        flex-grow: 0;
         justify-content: flex-start;
+    }
+
+    .logo img {
+        max-height: 130px;
     }
 
     .image-box {
@@ -184,4 +198,22 @@ header {
         background-repeat: no-repeat;
         background-position: center;
     }
+
+    .image-box-content h1 {
+        font-size: 83px;
+    }
+    
+    .image-box-content p {
+        font-size: 39px;
+    }
+
+    .image-box-content {
+        position: absolute;
+        bottom: 120px;
+        text-align: end;
+        margin-right: 20px;
+        padding: 0;
+    }
+    
+
 }
