@@ -17,7 +17,6 @@ header {
     position: fixed;
     top: 0;
     z-index: 99;
-    background: #333;
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
@@ -32,7 +31,7 @@ header {
 }
 
 .logo img {
-    max-height: 50px;
+    max-height: 60px;
 }
 
 .mobile-menu-icon {
@@ -42,7 +41,7 @@ header {
     position: fixed;
     right: 20px;
     top: 15px;
-    color: white;
+    color: #ffffff;
     z-index: 101;
 }
 
@@ -59,7 +58,7 @@ header {
 }
 
 .header-menu a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     font-size: 1.2em;
 }
@@ -76,7 +75,7 @@ header {
     left: -294px;
     width: 294px;
     height: 100vh;
-    background: #333;
+    background: #1e1e1e;
     padding: 20px;
     transition: left 0.3s ease-in-out;
 }
@@ -93,17 +92,77 @@ header {
 
 .mobile-menu li {
     font-family: 'Anton', sans-serif;
-    margin: 20px 0;
+    margin: 0;
+    text-align: left;
+    border-bottom: 1px solid #333333;
 }
 
 .mobile-menu a {
-    color: white;
+    display: block;
+    color: #ffffff;
     text-decoration: none;
     font-size: 1.5em;
+    padding: 15px 0;
+}
+
+.mobile-menu li:last-child {
+    border-bottom: none;
 }
 
 .mobile-menu a:hover {
     color: #3E94C1;
+}
+
+/* Imagem principal */
+.image-box {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: url('/public/assets/images/Banner-mobile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
+.image-box-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+.image-box-content h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 66px;
+    color: #73AC32;
+    margin-bottom: 10px;
+}
+
+.image-box-content p {
+    font-family: 'Anton', sans-serif;
+    font-size: 27px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.image-box-content button {
+    font-family: 'Anton', sans-serif;
+    font-size: 23px;
+    color: #FFFFFF;
+    background-color: #3E94C1;
+    width: 232px;
+    height: 53px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 7px;
+}
+
+.image-box-content button:hover {
+    background-color: #2b6d8f;
 }
 
 @media screen and (min-width: 730px) {
@@ -117,5 +176,12 @@ header {
 
     .logo {
         justify-content: flex-start;
+    }
+
+    .image-box {
+        background: url('/public/assets/images/banner-foto-princ.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 }
