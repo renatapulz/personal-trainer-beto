@@ -14,7 +14,7 @@ Este projeto foi desenvolvido como parte da disciplina WebStandards do Senac. A 
 - Netlify (deploy)
 
 🔗 Link
-Página publicada no Netlify: [Coloque o link aqui]
+Página publicada no Netlify: https://betoprima-personal.netlify.app/
 
 🚀 Melhorias Futuras
 Este projeto foi desenvolvido dentro de um prazo limitado, e algumas melhorias ainda podem ser implementadas:
